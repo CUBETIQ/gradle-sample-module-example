@@ -16,14 +16,7 @@ class SampleModuleExampleApplication {
 
     @EventListener(ApplicationReadyEvent::class)
     fun onApplicationReady() {
-        val json = """
-			{
-				"name": "Sambo",
-				"age": 24
-			}
-		""".trimIndent()
-        val node = json.toModel<Person>()
-        print(node)
+        println("Application running....")
     }
 }
 
