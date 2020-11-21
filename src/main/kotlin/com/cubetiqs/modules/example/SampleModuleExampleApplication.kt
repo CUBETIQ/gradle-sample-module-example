@@ -1,7 +1,5 @@
 package com.cubetiqs.modules.example
 
-import com.cubetiqs.enterprise.comutils.json.toJson
-import com.cubetiqs.enterprise.comutils.json.toModel
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.context.event.ApplicationReadyEvent
 import org.springframework.boot.runApplication

@@ -3,7 +3,6 @@ plugins {
 
     kotlin("jvm")
     kotlin("plugin.spring")
-    kotlin("plugin.jpa")
 }
 
 dependencies {
@@ -15,7 +14,9 @@ dependencies {
     implementation(kotlin("reflect"))
     implementation(kotlin("stdlib-jdk8"))
 
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
+    testImplementation("org.springframework.boot:spring-boot-starter-test") {
+        exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
+    }
 }
 
 tasks.withType<Test> {
